@@ -1,0 +1,151 @@
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--dark);
+}
+.container{
+    width: 60%;
+    margin: auto;
+}
+.container .title {
+    margin: 40px 0 20px 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--grey);
+}
+
+.container .addtask{
+    margin-bottom: 40px;
+}
+
+.container .addtask form{
+    position: relative;
+}
+.container .addtask form input{
+    width: 74%;
+    height: 23px;
+    padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+    border-width: 0;
+    background-color: var(--darker);
+    color: var(--light);
+    font-family: monospace;
+    font-size: 1.25rem;
+    /* font-weight: 600; */
+    outline: none;
+}
+
+
+::placeholder {
+    font-family: monospace;
+    font-size: large;
+    color: var(--grey);
+  }
+
+.container  .addtask  form  button{
+    position: relative;
+    height: 30px;
+    padding: 5px 10px;
+    color: brown;
+    border: none;
+    background-color: #fcfcfc;
+    font-family: monospace;
+    font-size: 1.25rem;
+	font-weight: 700;
+    color: var(--pink);
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.container  .addtask  form  button:hover {
+	opacity: 0.8;
+}
+
+.container  .addtask  form  button:active {
+	opacity: 0.6;
+}
+
+
+.container h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+	font-weight: 600;
+	color: var(--grey);
+	margin-bottom: 1rem;
+}
+
+
+.container .tasks .newtask{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+    
+}
+
+.container .tasks .newtask p{
+    font-family: monospace;
+    font-size: large;
+    /* font-weight: 600; */
+    color: var(--light);
+	font-size: 1.125rem;
+}
+
+.container .tasks .newtask .buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 125px;
+}
+
+.container .tasks .newtask .buttons button{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    font-family: monospace;
+    cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+   
+}
+
+
+.container .tasks .newtask .buttons button:hover {
+	opacity: 0.8;
+}
+
+.container .tasks .newtask .buttons button:active {
+	opacity: 0.6;
+}
+
+.container .tasks .newtask .buttons .edit {
+	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.container .tasks .newtask .buttons .delete {
+	color: crimson;
+}
+
